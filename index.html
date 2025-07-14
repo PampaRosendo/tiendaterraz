@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Zomboid - TerraZ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #1e1e1e;
+      color: #f5f5f5;
+    }
+
+    header {
+      background-color: #ff1e1e;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    nav {
+      background-color: #2b2b2b;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #f5f5f5;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff1e1e;
+    }
+
+    .container {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background-color: #2a2a2a;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255, 30, 30, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      color: #ff1e1e;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin: 8px 0;
+      font-size: 0.95rem;
+    }
+
+    .price {
+      color: #00ffae;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #121212;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    .payment-methods {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .payment-methods img {
+      width: 60px;
+      margin: 10px;
+    }
+
+    .category-title {
+      font-size: 1.8rem;
+      color: #fff;
+      border-left: 5px solid #ff1e1e;
+      padding-left: 10px;
+      margin: 40px 30px 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    🧟 Tienda Oficial TerraZ - Project Zomboid
+  </header>
+
+  <nav>
+    <a href="#armas">Armas</a>
+    <a href="#vehiculos">Vehículos</a>
+    <a href="#kits">Kits</a>
+    <a href="#otros">Otros</a>
+  </nav>
+
+  <h2 class="category-title" id="armas">🔫 Armas</h2>
+  <section class="container">
+    <div class="card">
+      <h3>AK-47</h3>
+      <p>Rifle automático con gran potencia de fuego.</p>
+      <p class="price">Precio: $5000</p>
+    </div>
+    <div class="card">
+      <h3>Escopeta Recortada</h3>
+      <p>Ideal para defensa en espacios cerrados.</p>
+      <p class="price">Precio: $2500</p>
+    </div>
+  </section>
+
+  <h2 class="category-title" id="vehiculos">🚗 Vehículos</h2>
+  <section class="container">
+    <div class="card">
+      <h3>4x4 Blindado</h3>
+      <p>Vehículo resistente, perfecto para incursiones.</p>
+      <p class="price">Precio: $12000</p>
+    </div>
+    <div class="card">
+      <h3>Moto Cross</h3>
+      <p>Rápida y maniobrable. Ideal para escapar.</p>
+      <p class="price">Precio: $3500</p>
+    </div>
+  </section>
+
+  <h2 class="category-title" id="kits">🎒 Kits</h2>
+  <section class="container">
+    <div class="card">
+      <h3>Kit Médico Completo</h3>
+      <p>Incluye vendas, analgésicos, sutura y más.</p>
+      <p class="price">Precio: $1800</p>
+    </div>
+    <div class="card">
+      <h3>Kit de Supervivencia</h3>
+      <p>Comida, agua, linterna, mapa y herramientas.</p>
+      <p class="price">Precio: $3200</p>
+    </div>
+  </section>
+
+  <h2 class="category-title" id="otros">🧰 Otros</h2>
+  <section class="container">
+    <div class="card">
+      <h3>Rango VIP 7 días</h3>
+      <p>Acceso a comandos exclusivos y ventajas.</p>
+      <p class="price">Precio: $1500</p>
+    </div>
+    <div class="card">
+      <h3>Resurrección Instantánea</h3>
+      <p>Evita la muerte, mantén tu loot intacto.</p>
+      <p class="price">Precio: $2000</p>
+    </div>
+  </section>
+
+  <div class="payment-methods">
+    <h2>💳 Métodos de Pago</h2>
+    <p>Aceptamos los siguientes métodos de pago:</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mercado_Pago_logo.png" alt="Mercado Pago">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Paypal.png" alt="PayPal">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Visa-logo.png" alt="Visa">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+    <p>Para comprar, contáctanos vía Discord o completá el formulario de pago en la página principal del servidor.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 TerraZ | Tienda Oficial del servidor Project Zomboid | Sitio web 100% funcional y actualizado
+  </footer>
+</body>
+
+</html>
